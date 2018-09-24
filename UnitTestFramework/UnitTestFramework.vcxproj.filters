@@ -23,9 +23,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="OOTest\c11_type_traits.h">
-      <Filter>Header Files\OOTest</Filter>
-    </ClInclude>
     <ClInclude Include="OOTest\MemorySnap.h">
       <Filter>Header Files\OOTest</Filter>
     </ClInclude>
@@ -36,9 +33,6 @@
       <Filter>Header Files\OOTest</Filter>
     </ClInclude>
     <ClInclude Include="OOTest\OOTestShow.h">
-      <Filter>Header Files\OOTest</Filter>
-    </ClInclude>
-    <ClInclude Include="OOTest\pprintstl.h">
       <Filter>Header Files\OOTest</Filter>
     </ClInclude>
     <ClInclude Include="OOTest\Profiler.h">
@@ -73,9 +67,6 @@
     </ClInclude>
     <ClInclude Include="CPPSort.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CSort.h">
-      <Filter>Header Files\OOTest</Filter>
     </ClInclude>
     <ClInclude Include="UnitTest.h">
       <Filter>Header Files</Filter>

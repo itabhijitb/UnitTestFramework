@@ -1,20 +1,8 @@
-﻿Build started 3/12/2015 5:59:56 PM.
-     1>Project "C:\Users\abhibhat.ORADEV\Documents\Visual Studio 2012\Projects\UnitTestFramework\UnitTestFramework\UnitTestFramework.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze /analyze:plugin"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\\bin\localespc.dll" /errorReport:prompt   /analyze:quiet Source.cpp
-         Source.cpp
-     1>c:\users\abhibhat.oradev\documents\visual studio 2012\projects\unittestframework\unittestframework\ootest\ptable.h(114): warning C4244: '=' : conversion from '__int64' to 'size_t', possible loss of data
-     1>c:\users\abhibhat.oradev\documents\visual studio 2012\projects\unittestframework\unittestframework\countsort.h(21): warning C4018: '<' : signed/unsigned mismatch
-                 c:\users\abhibhat.oradev\documents\visual studio 2012\projects\unittestframework\unittestframework\countsort.h(26) : see reference to function template instantiation 'void CountSort::counting_sort<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>>(ForwardIterator,ForwardIterator)' being compiled
-                 with
-                 [
-                     ForwardIterator=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
-                 ]
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\abhibhat.ORADEV\Documents\Visual Studio 2012\Projects\UnitTestFramework\Debug\UnitTestFramework.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\abhibhat.ORADEV\Documents\Visual Studio 2012\Projects\UnitTestFramework\Debug\UnitTestFramework.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\abhibhat.ORADEV\Documents\Visual Studio 2012\Projects\UnitTestFramework\Debug\UnitTestFramework.lib" /MACHINE:X86 Debug\Source.obj
-         UnitTestFramework.vcxproj -> C:\Users\abhibhat.ORADEV\Documents\Visual Studio 2012\Projects\UnitTestFramework\Debug\UnitTestFramework.exe
-     1>Done Building Project "C:\Users\abhibhat.ORADEV\Documents\Visual Studio 2012\Projects\UnitTestFramework\UnitTestFramework\UnitTestFramework.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:22.86
+﻿  Source.cpp
+c:\users\abhijbha\source\repos\unittestframework\unittestframework\ootest\ptable.h(114): warning C4244: '=': conversion from '_Ty' to 'size_t', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+  UnitTestFramework.vcxproj -> C:\Users\abhijbha\Source\Repos\UnitTestFramework\Debug\UnitTestFramework.exe
+c:\users\abhijbha\source\repos\unittestframework\unittestframework\ootest\timer.h(32): warning C26444: Avoid unnamed objects with custom construction and destruction (es.84).

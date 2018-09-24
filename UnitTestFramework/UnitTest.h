@@ -1,21 +1,19 @@
 #ifndef __UNIT_TEST__
 #define __UNIT_TEST__
 #include <vector>
+#include <array>
 #include "OOTest/OOtest.h"
 struct TestSortSample: public OOTestNS::Pledge
 {
 
-    TestSortSample()
-    {
-        int a[] = {100, 2, 56, 200, -52, 3, 99, 33, 177, -199};
-        std::copy(a, a + OOTestNS::countof(a), std::back_inserter(data));
-    }
+	TestSortSample() {}
     virtual void Honour() = 0;
     bool IsCommitted()
     {
-        return true;
+		std::array<int, 10> sorted_data{ -199, -52, 2, 3, 33, 56, 99, 100, 177, 200 };
+        return data == sorted_data;
     }
-    std::vector<int> data;
+	std::array<int, 10> data{ 100, 2, 56, 200, -52, 3, 99, 33, 177, -199 };
 };
 struct TestSortSmall: public OOTestNS::Pledge
 {

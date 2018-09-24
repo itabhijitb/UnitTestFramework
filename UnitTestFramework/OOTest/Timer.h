@@ -16,6 +16,9 @@
 
 namespace OOTestNS {
 #ifdef WIN32
+	/*
+	Generic Timer class with nano second accuracy
+	*/
 	class Timer
 	{
 		double PCFreq;

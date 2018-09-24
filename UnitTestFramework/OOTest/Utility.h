@@ -23,6 +23,9 @@
 #define __UTILITY_H__
 namespace OOTestNS {
     namespace Utility {
+		/*
+		Splits a string based on multi-character string delimiter
+		*/
         std::vector<std::string> split(const std::string &st, const std::string &delims) {
             //std::stringstream ss(st);
             //std::string item;
@@ -42,7 +45,15 @@ namespace OOTestNS {
         return std::extent< T[ N ] >::value;
     }
 }
-bool SandBox(void *(*fn)(void *), void *arg, void *rc)
+/*
+Runs a single parameter function in a sandbox environment. This contains any signal/exception
+within the sandbox. The function returns fails if the callback function crashes else returns
+true.
+*/
+bool SandBox(void *(*fn)(void *), // callback to run in the sandbox
+	         void *arg, // function argument
+	         void *rc //function return value
+            )
 {
 #ifdef WIN32
     __try

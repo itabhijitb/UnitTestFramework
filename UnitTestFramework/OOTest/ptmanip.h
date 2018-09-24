@@ -61,10 +61,10 @@ namespace PTable
 		std::vector<size_t> min_col_width;
 	private:
 
-		bool is_fixed_size, has_header, has_footer;
-		bool bOvrDefaultAllign;
-		char col_sep, row_sep, header_sep, footer_sep;
-		Allignment OvrAllign;
+		bool is_fixed_size{}, has_header{}, has_footer{};
+		bool bOvrDefaultAllign{};
+		char col_sep{}, row_sep{}, header_sep{}, footer_sep{};
+		Allignment OvrAllign = Allignment();
 		
 
 	public:

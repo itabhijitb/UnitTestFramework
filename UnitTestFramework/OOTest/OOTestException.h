@@ -11,7 +11,7 @@ namespace OOTestNS
 	{
 	public:
 		ProfilerException(std::string msg) :m_msg(msg) {}
-		~ProfilerException() throw() {}
+		~ProfilerException() noexcept {}
 	private:
 		std::string m_msg;
 	};

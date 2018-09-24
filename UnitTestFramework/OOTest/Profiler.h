@@ -1,4 +1,4 @@
-#include "ProfilerShow.h"
+//#include "ProfilerShow.h"
 #include "Result.h"
 #include <fstream>
 #ifndef __PROFILER_PROFILER_H

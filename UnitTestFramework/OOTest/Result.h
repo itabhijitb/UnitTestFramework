@@ -139,7 +139,7 @@ namespace OOTestNS {
 					case CPU:
 					{
 						st << it_actors->second->Prestige().m_executionTime
-							<< "bytes";
+							<< "ms";
 						result[actor][act] = st.str();
 						break;
 					}
@@ -148,13 +148,13 @@ namespace OOTestNS {
                         if (it_actors->second->Prestige().m_peakworkingsetsize > 1024 * 1024 * 1024) {
 							st << std::fixed
 								<< std::setprecision(2)
-								<< static_cast<double>(it_actors->second->Prestige().m_peakworkingsetsize) / (1024 * 1024 * 1024)
+								<< static_cast<double>(it_actors->second->Prestige().m_peakworkingsetsize) / (1024LL * 1024 * 1024)
 								<< "GB";
 						}
 						else if (it_actors->second->Prestige().m_peakworkingsetsize > 1024 * 1024) {
 							st << std::fixed
 								<< std::setprecision(2)
-								<< static_cast<double>(it_actors->second->Prestige().m_peakworkingsetsize) / (1024 * 1024)
+								<< static_cast<double>(it_actors->second->Prestige().m_peakworkingsetsize) / (1024LL * 1024)
 								<< "MB";
 						}
 						else if (it_actors->second->Prestige().m_peakworkingsetsize > 1024) {
@@ -174,16 +174,16 @@ namespace OOTestNS {
 					}
 					case MEMORY:
 					{
-						if (it_actors->second->Prestige().m_memoryUse > 1024 * 1024 * 1024) {
+						if (it_actors->second->Prestige().m_memoryUse > 1024LL * 1024 * 1024) {
 							st << std::fixed
 								<< std::setprecision(2)
-								<< static_cast<double>(it_actors->second->Prestige().m_memoryUse) / (1024 * 1024 * 1024)
+								<< static_cast<double>(it_actors->second->Prestige().m_memoryUse) / (1024LL * 1024 * 1024)
 								<< "GB";
 						}
-						else if (it_actors->second->Prestige().m_memoryUse > 1024 * 1024) {
+						else if (it_actors->second->Prestige().m_memoryUse > 1024LL * 1024) {
 							st << std::fixed
 								<< std::setprecision(2)
-								<< static_cast<double>(it_actors->second->Prestige().m_memoryUse) / (1024 * 1024)
+								<< static_cast<double>(it_actors->second->Prestige().m_memoryUse) / (1024LL * 1024)
 								<< "MB";
 						}
 						else if (it_actors->second->Prestige().m_memoryUse > 1024) {
